@@ -8,7 +8,7 @@ Type=simple
 Restart=always
 RestartSec=270
 User=root
-ExecStart=sh /home/cerdan/startupif.sh
+ExecStart=sh startupif.sh
 
 [Install]
 WantedBy=multi-user.target
