@@ -1,0 +1,14 @@
+[Unit]
+Description=VPN Client over 4G network
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=270
+User=root
+ExecStart=sh /home/cerdan/startupif.sh
+
+[Install]
+WantedBy=multi-user.target
